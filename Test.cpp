@@ -1,7 +1,16 @@
-#include <vector>
+// declaration 1
+void func();
 
-int foo(int x, int y)
+int main()
 {
-	auto z = x * y;
-	return z;
+    // reference 1
+    func();
+    // reference 2
+    func();
 }
+
+// definition
+void func() {}
+
+// declaration 2
+void func();
